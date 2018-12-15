@@ -5,12 +5,12 @@ import PropTypes from 'prop-types'
 import styles from '../styles'
 
 export default class Note extends React.Component {
-  render() {
+  render () {
     return (
       <View style={[s.flex, s.note]}>
         <Text>{this.props.note.title}</Text>
       </View>
-    );
+    )
   }
 }
 
@@ -23,9 +23,9 @@ const s = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
     borderWidth: 0.5,
-    borderColor: '#d6d7da',
+    borderColor: '#d6d7da'
   }
-});
+})
 
 
 Note.PropTypes = {

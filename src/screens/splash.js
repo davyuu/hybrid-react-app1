@@ -6,7 +6,7 @@ import colors from '../styles/colors'
 import styles from '../styles'
 
 export default class Splash extends React.Component {
-  render() {
+  render () {
     return (
       <View style={[s.center, s.main]}>
         <Image
@@ -14,17 +14,17 @@ export default class Splash extends React.Component {
           source={assets.logo}
         />
       </View>
-    );
+    )
   }
 }
 
 const s = StyleSheet.create({
   ...styles,
   main: {
-    backgroundColor: colors.primary,
+    backgroundColor: colors.primary
   },
   headerImage: {
     width: 200,
     height: 200
   }
-});
+})

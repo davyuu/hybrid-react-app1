@@ -1,4 +1,5 @@
 {
+  "parser": "babel-eslint",
   "rules": {
       "semi": ["error", "never"],
       "quotes": ["error", "single"],
@@ -6,6 +7,6 @@
       "space-before-function-paren": ["error", "always"],
       "no-underscore-dangle": "off",
       "no-confusing-arrow": "off",
-      "no-return-assign": "off",
+      "no-return-assign": "off"
   }
 }

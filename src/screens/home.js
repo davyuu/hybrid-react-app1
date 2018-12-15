@@ -6,7 +6,7 @@ import notes from '../data/notes'
 import styles from '../styles'
 
 export default class Home extends React.Component {
-  render() {
+  render () {
     return (
       <View style={[s.center, s.main]}>
         <FlatList
@@ -16,7 +16,7 @@ export default class Home extends React.Component {
           numColumns={2}
         />
       </View>
-    );
+    )
   }
 }
 
@@ -25,4 +25,4 @@ const s = StyleSheet.create({
   notes: {
     marginVertical: 10
   }
-});
+})

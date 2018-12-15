@@ -1,0 +1,11 @@
+{
+  "rules": {
+      "semi": ["error", "never"],
+      "quotes": ["error", "single"],
+      "comma-dangle": ["error", "never"],
+      "space-before-function-paren": ["error", "always"],
+      "no-underscore-dangle": "off",
+      "no-confusing-arrow": "off",
+      "no-return-assign": "off",
+  }
+}

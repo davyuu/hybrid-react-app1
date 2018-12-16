@@ -1,17 +1,25 @@
 import React from 'react'
-import { View, Image, StyleSheet } from 'react-native'
+import { Button, View, Image, StyleSheet } from 'react-native'
 
 import assets from '../assets'
 import colors from '../styles/colors'
 import styles from '../styles'
 
 export default class Splash extends React.Component {
+  static navigationOptions = {
+    title: 'Splash'
+  }
+
   render () {
     return (
       <View style={[s.center, s.main]}>
         <Image
           style={s.headerImage}
           source={assets.logo}
+        />
+        <Button
+          title="Go Home"
+          onPress={() => this.props.navigation.navigate('Home')}
         />
       </View>
     )
@@ -21,6 +29,7 @@ export default class Splash extends React.Component {
 const s = StyleSheet.create({
   ...styles,
   main: {
+    ...styles.main,
     backgroundColor: colors.primary
   },
   headerImage: {

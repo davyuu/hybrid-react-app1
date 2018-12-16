@@ -6,6 +6,10 @@ import notes from '../data/notes'
 import styles from '../styles'
 
 export default class Home extends React.Component {
+  static navigationOptions = {
+    title: 'Home'
+  }
+
   render () {
     return (
       <View style={[s.center, s.main]}>

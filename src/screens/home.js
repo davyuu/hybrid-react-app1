@@ -16,6 +16,7 @@ export default class Home extends React.Component {
         <FlatList
           data={notes}
           style={s.notes}
+          keyExtractor={({id}) => id}
           renderItem={({item}) => <Note note={item}/>}
           numColumns={2}
         />

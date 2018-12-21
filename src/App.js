@@ -1,20 +1,12 @@
-import { createSwitchNavigator } from '@react-navigation/core'
-import { createBrowserApp } from '@react-navigation/web'
+import { createStackNavigator, createAppContainer } from 'react-navigation'
 
-import Home from './screens/home'
-import Splash from './screens/splash'
+import { navRoutes, initRoute } from './routes/nav'
 
-const routes = {
-  Home,
-  Splash
-}
-
-const AppNavigator = createSwitchNavigator(
-  routes,
-  {
-    initialRouteName: 'Splash'
-  }
+const App = createStackNavigator(
+  createAppContainer(
+    navRoutes,
+    { initialRouteName: initRoute }
+  )
 )
-const App = createBrowserApp(AppNavigator)
 
 export default App

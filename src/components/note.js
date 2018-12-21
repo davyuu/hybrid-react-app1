@@ -28,6 +28,6 @@ const s = StyleSheet.create({
 })
 
 
-Note.PropTypes = {
+Note.propTypes = {
   note: PropTypes.object.isRequired
 }

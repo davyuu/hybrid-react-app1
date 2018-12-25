@@ -7,6 +7,8 @@ export default {
     alignItems: 'center'
   },
   main: {
-    flex: 1
+    flex: 1,
+    flexDirection: 'column',
+    padding: 20
   }
 }

@@ -1,9 +1,11 @@
+import uuidv1 from 'uuid/v1'
+
 export default [{
-  id: 1,
+  id: uuidv1(),
   title: 'Random note title',
   content: 'Random note content'
 }, {
-  id: 2,
+  id: uuidv1(),
   title: 'Random note title 2',
   content: 'Random note content 2'
 }]
